@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    background-color: #1e1e1e; /* Darker background for better contrast */
+    color: #e0e0e0; /* Light gray text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    text-align: left; /* Align text to the left */
+    padding: 40px;
+    background-color: #2a2a2a; /* Slightly lighter background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.quote {
+    font-size: 1.6em; /* Increased font size for emphasis */
+    line-height: 1.5; /* Spacing between lines */
+    position: relative; /* Positioning for the vertical line */
+}
+
+.quote::before {
+    content: ""; /* Empty content for pseudo-element */
+    position: absolute;
+    left: -15px; /* Positioning of the vertical line */
+    top: 0;
+    bottom: 0;
+    width: 5px; /* Width of the vertical line */
+    background-color: #007C92; /* Color between azure blue and teal */
+}
+
+footer {
+    margin-top: 15px;
+    font-size: 1em; /* Consistent font size for the author */
+    color: #cccccc; /* Lighter gray for the author's name */
+    text-align: right; /* Align author name to the right */
+}
